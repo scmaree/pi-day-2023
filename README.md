@@ -40,9 +40,9 @@ Output of `test.py`:
     pisano_example1         PASS         0   33004   33004
     lookup_hex              PASS         0   22573   22573
     lookup_orthogonal       PASS         1   18940   18941
-    compute_fast            PASS        43     450     493
-    compute_short           PASS        72     151     223
-    def [...]               PASS        70      43     113
+    compute_fast            PASS        30     370     400
+    compute_short           PASS        70     151     221
+    from math [...]         PASS        25      73      98
 ```
 
 - `pisano_example1` (by vortechbv)  includes all Pisano periods for 1..6000 hardcoded in the source.
@@ -54,8 +54,8 @@ Output of `test.py`:
    smaller, and that all but `pisano_period(2)` are even.
 - `compute_fast` exploits a prime factorization and the Chinese Remainder Theorem to efficiently compute Pisano periods.
 - `compute_short` computes Pisano numbers in the least amount of code I could imagine.
-- `def [...]` computes the Pisano numbers by using the observation that file size is independent of the file name, so it
-   puts the algorithm of `compute_short` in the filename, with some tricks that pep8 would normally not allow, but  
+- `from math [...]` computes the Pisano numbers by using the observation that file size is independent of the file name, so it
+   puts the algorithm of `compute_fast` in the filename, with some tricks that pep8 would normally not allow, but
    strings are not parsed by pep8; making it a bit of a loophole in the challenge. 
 
 

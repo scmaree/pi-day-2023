@@ -44,7 +44,7 @@ if __name__ == '__main__':
         "lookup_orthogonal",
         "compute_fast",
         "compute_short",
-        "def p(m,c,k,n):N while k or n!=1:N  k,n,c=n,(k+n)%m,c+1N return cNget_pisano_numbers=lambda l:[p(n,1,1,1) for n in l]",
+        "from math import isqrt,lcmNdef F(n,p=1):N while p<isqrt(n):N  p,c=p+1,0N  while not Oc+1N  if c:yield p**(c-1)*C(p)N if n>1:yield C(n)Ndef C(f):N c=k=l=1N while k or l!=1:k,l,c=l,(k+l)%f,c+1N return cNget_pisano_numbers=lambda l:[lcm(*F(m)) for m in l]"
         # "pisano_example2",
     ]:
         result, runtime, file_size = do_test(solution, samples, reference)
