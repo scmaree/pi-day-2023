@@ -39,10 +39,10 @@ Output of `test.py`:
     NAME                    RESULT    TIME    SIZE   SCORE
     pisano_example1         PASS         0   33004   33004
     lookup_hex              PASS         0   22573   22573
-    lookup_orthogonal       PASS         1   18940   18941
-    compute_fast            PASS        30     370     400
+    lookup_orthogonal       PASS         1   18362   18363
+    compute_fast            PASS        25     401     426
     compute_short           PASS        70     151     221
-    from math [...]         PASS        25      73      98
+    from math [...]         PASS        25      64      89
 ```
 
 - `pisano_example1` (by vortechbv)  includes all Pisano periods for 1..6000 hardcoded in the source.

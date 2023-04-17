@@ -1,4 +1,5 @@
 import math
+import functools as t
 
 
 def F(n, p=1):
@@ -12,6 +13,7 @@ def F(n, p=1):
         yield C(n)
 
 
+@t.cache
 def C(f, c=1, k=1, l=1):
     while k or l != 1:
         k, l, c = l, (k+l) % f, c+1
